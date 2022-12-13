@@ -1,0 +1,83 @@
+<link rel="stylesheet" type="text/css" href="CSS/dropdown.css">
+<script src="JS/jquery.js"></script>
+
+<table id="links">
+	<tr>
+		<td><a class="these" href="index">About Us</a></td>
+		<td><a class="these" href="contact">Contact</a></td>
+		<td><a class="these" href="beliefs">Beliefs</a></td>
+		<td><a class="these" href="whats_on">What's On</a></td>
+	</tr>
+</table>
+
+<ul id="dropdown">
+<center>
+	<li><button id="dropping" onclick="drop()">☰</button>
+	<ul id="drop_links">
+		<li><a href="index">About Us</a></li>
+		<li><a href="contact">Contact</a></li>
+		<li><a href="beliefs">Beliefs</a></li>
+		<li><a href="whats_on">What's On</a></li>
+	</ul></li>
+</center>
+</ul>
+
+
+<script type="text/javascript">
+	var check = 0;
+	function drop() {
+		if (check == 1) {
+			$("#drop_links").fadeToggle(400);
+        	$("#outer").delay(400).animate({top: '110px'});
+			check = 0;
+		} else {
+			$("#drop_links").delay(400).fadeToggle();
+        	$("#outer").animate({top: '220px'}, 400);
+			check = 1;
+		}
+	}
+</script>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Heywood Christadelphians</title>
+	<link rel="stylesheet" type="text/css" href="CSS/index.css">
+	<meta name="viewport" content="width=device-width">
+	<style type="text/css">
+		p {
+			width: 90%;
+			text-align: left;
+		}
+	</style>
+</head>
+<body>
+
+<center><h1>Heywood Christadelphians</h1></center>
+<div id="outer">
+	<center>
+		<div id="inner">		
+			<span style="color: rgb(130, 130, 130); font-size: 10pt;"><i>By using this page you agree to the terms and conditions below.</i></span>
+			<center><h2><b>Cookies</b></h2></center>
+			<center>
+			<p>To make this site work properly, we sometimes place small data files called cookies on your device. Most big websites do this too.</p>
+			</center>
+
+			<h3><b>What are cookies?</b></h3>
+			<center>
+			<p>A cookie is a small text file that a website saves on your computer or mobile device when you visit the site. It enables the website to remember your actions and preferences (such as login, language, font size and other display preferences) over a period of time, so you don’t have to keep re-entering them whenever you come back to the site or browse from one page to another.</p>
+			</center>
+
+			<h3><b>How do we use cookies?</b></h3>
+			<center>
+			<p>The cookies are for first party and they are permanent. The cookies are not permanent and will be deleted after a short time. The function we use cookies for is to check whether you have closed the cookie warning. This is permanent for 10 days. _GA cookie is used by Google analytics which is set the first time the website has been loaded. It then checks to see how many and how long you use the page for. This website will control the cookies information and the cookie will not be used for anything other than remembering which option you chose for auto refresh and also to keep the admin logged in. These cookies can be deleted or blocked however some features may not work as intended.</p>
+			</center>
+
+			<h3><b>How to control cookies</b></h3>
+			<center>
+			<p>You can control and/or delete cookies as you wish – for details, see <a target="blank_" href="http://www.aboutcookies.org.uk">aboutcookies.org.uk</a>. You can delete all cookies that are already on your computer and you can set most browsers to prevent them from being placed. If you do this, however, you may have to manually adjust some preferences every time you visit a site and some services and functionalities may not work.</p>
+			</center>
+		</div>
+		</center>
+	</div>
+</body>
+</html>
