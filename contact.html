@@ -1,0 +1,62 @@
+<link rel="stylesheet" type="text/css" href="CSS/dropdown.css">
+<script src="JS/jquery.js"></script>
+
+<table id="links">
+	<tr>
+		<td><a class="these" href="index.html">About Us</a></td>
+		<td><a class="these" href="contact.html">Contact</a></td>
+		<td><a class="these" href="beliefs.html">Beliefs</a></td>
+		<td><a class="these" href="whats_on.html">What's On</a></td>
+	</tr>
+</table>
+
+<ul id="dropdown">
+<center>
+	<li><button id="dropping" onclick="drop()">☰</button>
+	<ul id="drop_links">
+		<li><a href="index.html">About Us</a></li>
+		<li><a href="contact.html">Contact</a></li>
+		<li><a href="beliefs.html">Beliefs</a></li>
+		<li><a href="whats_on.html">What's On</a></li>
+	</ul></li>
+</center>
+</ul>
+
+
+<script type="text/javascript">
+	var check = 0;
+	function drop() {
+		if (check == 1) {
+			$("#drop_links").fadeToggle(400);
+        	$("#outer").delay(400).animate({top: '110px'});
+			check = 0;
+		} else {
+			$("#drop_links").delay(400).fadeToggle();
+        	$("#outer").animate({top: '220px'}, 400);
+			check = 1;
+		}
+	}
+</script>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Heywood Christadelphians</title>
+	<link rel="stylesheet" type="text/css" href="CSS/index.css">
+	<meta name="viewport" content="width=device-width">
+
+</head>
+<body>
+<center><h1>Heywood Christadelphians</h1></center>
+
+<div id="outer">
+<center>
+	<div id="inner">
+		<center><h2>Contact</h2></center>
+			<p>
+				<b>Email Us:</b> <a href="mailto:contact@heywood-christadelphians.org">contact@heywood-christadelphians.org</a>
+			</p>
+	</div>
+</center>
+</div>
+</body>
+</html>

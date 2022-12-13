@@ -1,0 +1,79 @@
+<link rel="stylesheet" type="text/css" href="CSS/dropdown.css">
+<script src="JS/jquery.js"></script>
+
+<table id="links">
+	<tr>
+		<td><a class="these" href="index.html">About Us</a></td>
+		<td><a class="these" href="contact.html">Contact</a></td>
+		<td><a class="these" href="beliefs.html">Beliefs</a></td>
+		<td><a class="these" href="whats_on.html">What's On</a></td>
+	</tr>
+</table>
+
+<ul id="dropdown">
+<center>
+	<li><button id="dropping" onclick="drop()">☰</button>
+	<ul id="drop_links">
+		<li><a href="index.html">About Us</a></li>
+		<li><a href="contact.html">Contact</a></li>
+		<li><a href="beliefs.html">Beliefs</a></li>
+		<li><a href="whats_on.html">What's On</a></li>
+	</ul></li>
+</center>
+</ul>
+
+
+<script type="text/javascript">
+	var check = 0;
+	function drop() {
+		if (check == 1) {
+			$("#drop_links").fadeToggle(400);
+        	$("#outer").delay(400).animate({top: '110px'});
+			check = 0;
+		} else {
+			$("#drop_links").delay(400).fadeToggle();
+        	$("#outer").animate({top: '220px'}, 400);
+			check = 1;
+		}
+	}
+</script>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Heywood Christadelphians</title>
+	<link rel="stylesheet" type="text/css" href="CSS/index.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<meta name="keywords" content="Heywood, Church, Heywood Christadelphians, Christadelphian, Christadelphians, Bible">
+	<meta name="description" content="Heywood Christadelphians Website">
+</head>
+<body>
+
+<center><h1>Heywood Christadelphians</h1></center>
+<div id="outer">
+	<center>
+		<div id="inner">
+			<center><h2>About Us</h2></center>
+			<p><img src="CSS/front.png" style="float:right; padding-bottom: 2%;" width="285px">
+				The Heywood Christadelphians are a group of Bible believers from Lancashire, in the UK. We are just a small part of the worldwide Christadelphian community, bound together by our common belief in the Gospel message, and by baptism into Jesus’ name.
+				<br><br>
+				We base our faith entirely on the Bible, and our beliefs on those of the original First Century Christians. We believe that God sent his son, Jesus Christ, into the world to be both an example and sacrifice for anyone who is willing to turn to God and follow his commandments.
+				<br><br>
+				Our aim is to "seek first the Kingdom of God and His righteousness," looking forward to the return of Jesus to the earth to set up the Kingdom of God.
+			</p>
+
+			<center><p><b>Address:</b> Starkey St, Heywood OL10 4JS</p></center>
+
+			<h3>Meeting Times</h3>
+
+			<p style="padding-left: 15px;">
+				<b>Public Bible Talk</b> - Sundays at 2:00pm<br>
+				<b>Bible Class</b> - Tuesdays at 7:50pm<br>
+				<b>Sunday School</b> - Sundays at 9:45am<br>
+				<b>Youth Group</b> - Alternate Fridays at 6:45pm<br><br>
+				<a href="whats_on.html">For more about what's on click here</a>
+			</p>
+		</div>
+	</center>
+</div>
+</body>
+</html>
