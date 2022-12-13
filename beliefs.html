@@ -1,0 +1,70 @@
+<link rel="stylesheet" type="text/css" href="CSS/dropdown.css">
+<script src="JS/jquery.js"></script>
+
+<table id="links">
+	<tr>
+		<td><a class="these" href="index.html">About Us</a></td>
+		<td><a class="these" href="contact.html">Contact</a></td>
+		<td><a class="these" href="beliefs.html">Beliefs</a></td>
+		<td><a class="these" href="whats_on.html">What's On</a></td>
+	</tr>
+</table>
+
+<ul id="dropdown">
+<center>
+	<li><button id="dropping" onclick="drop()">☰</button>
+	<ul id="drop_links">
+		<li><a href="index.html">About Us</a></li>
+		<li><a href="contact.html">Contact</a></li>
+		<li><a href="beliefs.html">Beliefs</a></li>
+		<li><a href="whats_on.html">What's On</a></li>
+	</ul></li>
+</center>
+</ul>
+
+
+<script type="text/javascript">
+	var check = 0;
+	function drop() {
+		if (check == 1) {
+			$("#drop_links").fadeToggle(400);
+        	$("#outer").delay(400).animate({top: '110px'});
+			check = 0;
+		} else {
+			$("#drop_links").delay(400).fadeToggle();
+        	$("#outer").animate({top: '220px'}, 400);
+			check = 1;
+		}
+	}
+</script>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Heywood Christadelphians</title>
+	<link rel="stylesheet" type="text/css" href="CSS/index.css">
+	<meta name="viewport" content="width=device-width">
+
+</head>
+<body>
+<center><h1>Heywood Christadelphians</h1></center>
+
+<div id="outer">
+<center>
+	<div id="inner">
+		<center><h2>Beliefs</h2></center>
+		<ul>
+			<li>The Bible reveals the true purpose of life today and gives us hope for tomorrow</li>
+			<li>Because God cares about the world he caused a son to be born of a virgin, to be the saviour of the world. Jesus is the Son of God.</li>
+			<li>Jesus lived a life without sin, died and rose again to save us from sin and death and to give us hope of life for ever.</li>
+			<li>Jesus ascended to heaven and will return to judge the world and rule over all nations from Jerusalem.</li>
+			<li>God is active in the world today and at the return of Jesus he will solve all human problems completely and for ever.</li>
+			<li>Jesus will set up God's kingdom on earth with great power and in righteousness.</li>
+			<li>Repentance, belief and baptism by immersion are essential for salvation.</li>
+			<li>This is the good news of God's salvation and of His kingdom to come on earth. </li>
+		</ul>
+		<center><a target="_blank" href="https://www.thechristadelphians.org.uk">For more information click here.</a></center>
+	</div>
+</center>
+</div>
+</body>
+</html>
