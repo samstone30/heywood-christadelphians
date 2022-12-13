@@ -6,7 +6,7 @@ RewriteRule ^([^\.]+)$ $1.php [NC,L]
 #RewriteCond %{HTTP_HOST} !^www\.heywood-christadelphians\.org$ [NC]
 #RewriteRule ^(.*)$ https://www.heywood-christadelphians.org/$1 [L,R=301]
 
-DirectoryIndex index.php
+DirectoryIndex index.html
 
 ErrorDocument 404 /Errors/error404.php
 ErrorDocument 401 /Errors/error401.php
