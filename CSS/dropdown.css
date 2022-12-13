@@ -1,0 +1,81 @@
+@media screen and (min-width: 500px) {
+	#links {
+		position: absolute;
+		top: 54px;
+		left: 0%;
+		text-align: center;
+		width: 100%;
+		background-color: black;
+	}
+	#dropdown {
+		display: none;
+	}
+	#links td {
+		position: relative;
+		width: 10%;
+		height: 40px;
+	}
+
+	#links td:hover {
+		background-color: rgb(150, 150, 150);
+	}
+
+	#links td a {
+		color: rgb(255, 255, 255);
+		text-decoration: none;
+		position: absolute;
+		top: 0%;
+		left: 0%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		width: 100%;
+	}
+}
+a {
+	color: rgb(45, 101, 255);
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+@media screen and (max-width: 499px) {
+	#links {
+		display: none;
+	}
+	#dropdown li {
+		list-style: none;
+	}
+	#dropdown li ul {
+		display: none;
+	}
+	#dropdown {
+		position: absolute;
+		text-align: center;
+		top: 40px;
+		left: 0%;
+		width: 100%;
+		background-color: white;
+		z-index: 0;
+		clear: left;
+		padding: 0%;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);		
+		border-top: 0.5px solid;
+	}
+
+	#drop_links {
+		width: 300px;
+		padding: 0%;
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
+	#dropping {
+		border: none;
+		background-color: white;
+		color: black;
+		width: 90%;
+		cursor: pointer;
+		font-size: 16pt;
+	}
+}

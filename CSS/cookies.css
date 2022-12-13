@@ -1,0 +1,51 @@
+#cookies {
+	top: -1%;
+	left: -1%;
+	width: 102%;
+	height: 102%;
+    z-index: 1;
+    position: fixed;
+    display: none;
+    background-color: rgba(50, 50, 50, 0.9);
+}
+
+
+#popup {
+	width: 350px;
+	height: 120px;
+	background-color: white;
+	border-radius: 15px;
+	padding: 2%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+
+}
+
+#popup_button {
+	cursor: pointer;
+	height: 25px;
+	width: 150px;
+	font-size: 12pt;
+	border: 0.5px solid;
+	background-color: white;
+	border-radius: 3px;
+	color: rgb(209, 54, 23);
+	border-top: 0.1px solid rgb(255,255,255);
+	border-bottom: 1px solid rgb(202,202,202);
+	border-left: 1.5px solid rgb(227,227,227);
+	border-right: 1.5px solid rgb(227,227,227);
+}
+
+#popup_button:hover {
+	border-top: 0.1px solid rgb(220,220,220);
+	border-bottom: 1.5px solid rgb(205,205,205);
+	border-left: 1px solid rgb(210,210,210);
+	border-right: 1px solid rgb(210,210,210);
+}
+
+#popup_button:active {
+	color: rgb(51, 133, 255);
+}

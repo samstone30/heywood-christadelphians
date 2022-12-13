@@ -1,0 +1,86 @@
+label {
+	font-size: 10pt;
+}
+input[type="text"] {
+	width: 50%;
+	border: none;
+	font-size: 9pt;
+	padding: 5px;
+	color: rgb(45, 101, 255);
+	outline: none;
+}
+
+#output {
+	
+	padding: 0px;
+	font-size: 12pt;
+}
+
+/* Button styles */
+.buttons{
+  display: inline-block;
+  position: relative;
+  background: none;
+  border: none;
+  color: rgb(45, 101, 255);
+  font-size: 18px;
+  cursor: pointer;
+  margin: 20px 30px;
+  background: transparent;
+}
+
+button span{
+  display: block;
+  padding: 25px 80px;
+}
+.buttons::before, .buttons::after{
+  content:"";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: rgb(45, 101, 255);
+}
+
+button span::before, button span::after{
+  content:"";
+  width:2px;
+  height:0;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: rgb(45, 101, 255);
+}
+.buttons:hover::before, .buttons:hover::after{
+  width: 100%;
+}
+.buttons:hover span::before, .buttons:hover span::after{
+  height: 100%;
+}
+
+/*----- button 6 -----*/
+#change::before{
+  left: 50%;
+  top: 0;
+  transition-duration: 0.4s;
+}
+#change::after{
+  left: 50%;
+  bottom: 0;
+  transition-duration: 0.4s;
+}
+#change span::before{
+  left: 0;
+  top: 50%;
+  transition-duration: 0.4s;
+}
+#change span::after{
+  right: 0;
+  top: 50%;
+  transition-duration: 0.4s;
+}
+#change:hover::before, #change:hover::after{
+  left: 0;
+}
+#change:hover span::before, #change:hover span::after{
+  top: 0;
+}

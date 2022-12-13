@@ -1,0 +1,54 @@
+html {
+	font-family: arial;
+}
+
+h1 {
+	font-size: 24px;
+	position: absolute;
+	left: 0%;
+	top: 0%;
+	height: 40px;
+	width: 100%;
+	border-bottom: 0.5px solid black;
+}
+
+
+#close {
+	position: absolute;
+	right: 0%;
+	top: 0%;
+	padding-right: 2%;}
+
+@media screen and (min-width: 500px) {
+	#inner {
+		width: 75%;
+		text-align: left;
+		border: 0.3px solid rgb(200, 200, 200);
+		border-radius: 25px;
+		padding: 3%;
+	}
+	#outer {
+		position: absolute;
+		padding-bottom: 1%;
+		top: 130px;
+		left: 0%;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 499px) {
+	#inner {
+		width: 75%;
+		text-align: left;
+		border: 0.3px solid rgb(200, 200, 200);
+		border-radius: 25px;
+		padding: 3%;
+	}
+	#outer {
+		position: absolute;
+		padding-bottom: 1%;
+		top: 110px;
+		left: 0%;
+		width: 100%;
+	}
+}
